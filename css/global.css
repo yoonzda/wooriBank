@@ -1,0 +1,27 @@
+*{font-family: 'Pretendard';}
+a{color: inherit;}
+
+body{background-color: #F9F9FA;}
+
+header{position: fixed; background-color: tomato; width: 100%; z-index: 100;}
+header div.headerWrap{position: relative;}
+header div.headerWhite{background-color: #FFF; box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);}
+header div.headerWhite::after{content: ''; display: block; background: linear-gradient(175deg, #3C83F6 -10%, #673AB6, #16A249 110%); width: 100%; height: 2px;}
+header div.headerWhite div{max-width: 1350px; margin: 0 auto; display: flex; justify-content: space-between;}
+header div.headerWhite div:has(ul){padding-top: 24px; margin-bottom: 32px;}
+header div.headerWhite div ul{display: flex; align-items: center; gap: 24px;}
+header div.headerWhite div ul li{display: block;}
+header div.headerWhite div ul li span{display: block; background-image: url('../images/woori_icon_person.svg'); background-repeat: no-repeat; background-position: left center; padding-left: 20px; font-size: 14px; font-weight: 500; line-height: 140%; color: #434343;}
+header div.headerWhite div ul li button{font-size: 13px; font-weight: 500; line-height: 140%;}
+header div.headerWhite div:has(ol){padding-bottom: 24px;}
+header div.headerWhite div ol{display: flex; gap: 6px;}
+header div.headerWhite div ol li{display: block;}
+header div.headerWhite div ol li button{font-size: 14px; font-weight: 400; line-height: 140%;}
+header div.headerGradation{position: absolute; z-index: -1; background: linear-gradient(175deg, #3C83F6 -10%, #673AB6, #16A249 120%); width: 1350px; margin-top: -48px; padding: 60px 0 16px; border-radius: 0 0 70px 70px; left: 50%; transform: translate(-50%, 0);}
+header div.headerGradation p{text-align: center; font-size: 17px; font-weight: 600; line-height: 140%; color: #FFF; letter-spacing: -0.5px;}
+
+footer{mix-blend-mode: luminosity; max-width: 1350px; display: flex; gap: 32px; margin: 0 auto; padding: 36px 0;}
+footer ul{display: flex; gap: 24px;}
+footer ul li{display: block;}
+footer p{font-size: 12px; font-weight: 400; color: #999999; line-height: 140%;}
+footer p b{font-weight: 600; display: block;}

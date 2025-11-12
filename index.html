@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리은행 VDI</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="headerWhite">
+                <div>
+                    <ul>
+                        <li><a href=""><img src="images/woori_logo.svg" alt="woori bank logo"></a></li>
+                        <li><a href=""><img src="images/woori_logo_VDI.svg" alt="woori bank VDI logo"></a></li>
+                    </ul>
+                    <ul>
+                        <li><span>kimgr001</span></li>
+                        <li><button type="button" class="btn gray">로그아웃</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ol>
+                        <li><a href="" class="chip blue active">Home</a></li>
+                        <li><a href="" class="chip blue">VDI 신청 관리</a></li>
+                        <li><a href="" class="chip blue">공지사항</a></li>
+                        <li><a href="" class="chip blue">FAQ</a></li>
+                        <li><a href="" class="chip blue">Q&A</a></li>
+                    </ol>
+                    <ol>
+                        <li><button type="button" class="btn gray">강제 재시작</button></li>
+                        <li><button type="button" class="btn gray">셀프 파일 복구</button></li>
+                        <li><button type="button" class="btn gray">VDI Client 다운로드</button></li>
+                        <li><button type="button" class="btn gray">Plugin 다운로드</button></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="headerGradation">
+                <p>안전하고 빠른 가상 데스크톱 환경에 접속하여 언제 어디서나 업무를 시작하세요.</p>
+            </div>
+        </div>
+    </header>
+    <div class="contentContainer">
+        <div class="server box">
+            <h4>서버 선택</h4>
+            <button type="button" class="selectCustom">CL8-전용-W10</button>
+            <ol class="selectList">
+                <li class="active">CL8-전용-W10</li>
+                <li>CL8-전용-W11</li>
+                <li>CL8-전용-W12</li>
+                <li>CL8-전용-W13</li>
+                <li>CL8-전용-W14</li>
+                <li>CL8-전용-W15</li>
+                <li>CL8-전용-W16</li>
+                <li>CL8-전용-W17</li>
+            </ol>
+        </div>
+        <div class="system box">
+            <h3>시스템 사양</h3>
+            <ul>
+                <li>
+                    <div>icon blue</div>
+                    <p>
+                        CPU
+                        <span><b>2</b>Core</span>
+                    </p>
+                </li>
+                <li>
+                    <div>icon purple</div>
+                    <p>
+                        Memory
+                        <span><b>2</b>GB</span>
+                    </p>
+                </li>
+                <li>
+                    <div>icon green</div>
+                    <p>
+                        Disk
+                        <span><b>48</b>GB</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="window box">
+            <h3>화면 표시 모드</h3>
+            <ul class="windowSelect">
+                <li>
+                    <div>icon</div>
+                    <p>Multiple Screen</p>
+                    <small>다중화면</small>
+                </li>
+                <li>
+                    <div>icon</div>
+                    <p>Full Screen</p>
+                    <small>전체화면</small>
+                </li>
+                <li>
+                    <div>icon</div>
+                    <p>Window Small</p>
+                    <small>창 작게</small>
+                </li>
+                <li>
+                    <div>icon</div>
+                    <p>Window Full</p>
+                    <small>창 크게</small>
+                </li>
+            </ul>
+            <div>
+                <button type="button">
+                    <span class="bul">상태확인</span>
+                    <small>System Status</small>
+                </button>
+                <button type="button">
+                    <span>접속하기</span>
+                    <span>(PASSWORD)</span>
+                    <small>Connect to Desktop</small>
+                </button>
+            </div>
+        </div>
+        <div class="history box">
+            <h3 class="bul clock">최근 접속이력</h3>
+            <div>
+                <table>
+                    <colgroup>
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>사용자 아이디</th>
+                            <th>접속 IP</th>
+                            <th>가상 PC 이름</th>
+                            <th>로그인 시간</th>
+                            <th>로그아웃 시간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bul">king001</td>
+                            <td class="roboto">220.50.246.2</td>
+                            <td class="chip purple">PC001</td>
+                            <td>25.06.06  14:21</td>
+                            <td>25.06.06  14:21</td>
+                        </tr>
+                        <tr>
+                            <td class="bul">king001</td>
+                            <td class="roboto">220.50.246.2</td>
+                            <td class="chip purple">PC001</td>
+                            <td>25.06.06  14:21</td>
+                            <td>25.06.06  14:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><img src="images/woori_logo_gray.svg" alt="woori bank logo"></li>
+            <li><img src="images/woori_logo_VDI_gray.svg" alt="woori bank VDI logo"></li>
+        </ul>
+        <div>
+            <p>
+                <b>불법적인 접근 및 사용시 관련 법규에 의해 처벌될 수 있습니다.</b>
+                Copyright ⓒ All right reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
