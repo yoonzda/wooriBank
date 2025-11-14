@@ -11,6 +11,8 @@ header div.headerWhite div{max-width: 1350px; margin: 0 auto; display: flex; jus
 header div.headerWhite div:has(ul){padding-top: 24px; margin-bottom: 32px;}
 header div.headerWhite div ul{display: flex; align-items: center; gap: 24px;}
 header div.headerWhite div ul li{display: block;}
+header div.headerWhite div ul li a{display: block;}
+header div.headerWhite div ul li a img{display: block;}
 header div.headerWhite div ul li span{display: block; background-image: url('../images/woori_icon_person.svg'); background-repeat: no-repeat; background-position: left center; padding-left: 20px; font-size: 14px; font-weight: 500; line-height: 140%; color: #434343;}
 header div.headerWhite div ul li button{font-size: 13px; font-weight: 500; line-height: 140%;}
 header div.headerWhite div:has(ol){padding-bottom: 24px;}
