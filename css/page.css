@@ -68,9 +68,35 @@
 .history.box div{border-radius: 12px; border: 1px solid #E5E7EB;}
 .history.box div table{width: 100%; text-align: center;}
 .history.box div table thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
-.history.box div table thead th{font-size: 14px; font-weight: 600; line-height: 140%; color: #222; padding-block: 12px;}
+.history.box div table thead th{font-size: 14px; line-height: 140%; color: #222; padding-block: 12px;}
+.history.box div table thead th:not(accWeight){font-weight: 600;}
+.history.box div table thead th.accWeight{font-weight: 700;}
 .history.box div table tbody td:not(.chip){font-size: 14px; font-weight: 400; padding-block: 10px; color: #222;}
 .history.box div table tbody td.chip{display: inline-block; font-size: 12px; font-weight: 700;}
 .history.box div table tbody td.bul{padding-left: 16px; display: inline-block; position: relative;}
 .history.box div table tbody td.bul::before{content: ''; display: block; width: 8px; height: 8px; background-color: #16A249; border-radius: 4px; position: absolute; left: 0; top: 14px;}
 .history.box div table tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
+
+.listContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
+.detailContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
+.applyContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
+
+.tabList{background-color: #FFF; display: flex; justify-content: center; width: 438px; height: 46px; margin: 0 auto; border-radius: 50px; margin-bottom: 28px;}
+.tabList li{display: block; flex: 1; text-align: center; border-radius: 50px;}
+.tabList li:not(.active){font-weight: 500; color: #999;}
+.tabList li.active{background: linear-gradient(135deg, #2A6DF4, #9952E0); box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); font-weight: 800; color: #FFF;}
+.tabList li a{display: block; text-decoration: none; font-size: 16px; color: inherit; line-height: 46px;}
+
+.listContainer th,
+.detailContainer th,
+.applyContainer th{font-size: 15px; font-weight: 500; color: #222; background-color: rgba(243, 244, 246, 0.5);}
+
+.listContainer table th,
+.listContainer table td,
+.detailContainer table th,
+.detailContainer table td{border: 1px solid #E5E7EB;}
+
+/* table.verti{background-color: tomato;} */
+table.verti{border-radius: 12px; border: 1px solid #E5E7EB;}
+table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
+table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
