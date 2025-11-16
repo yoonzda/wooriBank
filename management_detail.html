@@ -52,90 +52,94 @@
         <div class="detailWrap">
             <div class="payerInfo box">
                 <h3 class="bul payer">결재자 정보</h3>
-                <table>
-                    <colgroup>
-                        <col width="37.5%">
-                        <col width="62.5%">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th>기본 결재자</th>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer1">
-                                <label for="payer1">test1(test1nm)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th rowspan="6">대우 결재자</th>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer2">
-                                <label for="payer2">test2(test2nm)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer3">
-                                <label for="payer3">test3(test3nm)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer4">
-                                <label for="payer4">test4(test4nm)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer5">
-                                <label for="payer5">test5(test5nm)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer6">
-                                <label for="payer6">test6(test6nm)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="payerInfo" id="payer7">
-                                <label for="payer7">test7(test7nm)</label>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="tableWrap">
+                    <table>
+                        <colgroup>
+                            <col width="37.5%">
+                            <col width="62.5%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>기본 결재자</th>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer1">
+                                    <label for="payer1">test1(test1nm)</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">대우 결재자</th>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer2">
+                                    <label for="payer2">test2(test2nm)</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer3">
+                                    <label for="payer3">test3(test3nm)</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer4">
+                                    <label for="payer4">test4(test4nm)</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer5">
+                                    <label for="payer5">test5(test5nm)</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer6">
+                                    <label for="payer6">test6(test6nm)</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="removeGutter">
+                                    <input type="radio" name="payerInfo" id="payer7">
+                                    <label for="payer7">test7(test7nm)</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="proposerInfo box">
-                <h3 class="bul">신청 정보</h3>
-                <table>
-                    <colgroup>
-                        <col width="18%">
-                        <col width="82%">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th>신청자</th>
-                            <td>KIMGR001 ()</td>
-                        </tr>
-                        <tr>
-                            <th>사용자</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th>데스크탑 풀</th>
-                            <td>testdeskpool (CL8-DEDI-Test)</td>
-                        </tr>
-                        <tr>
-                            <th>만료일</th>
-                            <td>2025.10.01</td>
-                        </tr>
-                        <tr>
-                            <th>신청 사유</th>
-                            <td>예외 권한 신청 test</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="buttonRightBox">
+                <h3 class="bul proposer">신청 정보</h3>
+                <div class="tableWrap">
+                    <table>
+                        <colgroup>
+                            <col width="18%">
+                            <col width="82%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>신청자</th>
+                                <td>KIMGR001 ()</td>
+                            </tr>
+                            <tr>
+                                <th>사용자</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>데스크탑 풀</th>
+                                <td>testdeskpool (CL8-DEDI-Test)</td>
+                            </tr>
+                            <tr>
+                                <th>만료일</th>
+                                <td>2025.10.01</td>
+                            </tr>
+                            <tr class="heightFill">
+                                <th>신청 사유</th>
+                                <td>예외 권한 신청 test</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="buttonBox right">
                     <button type="button">취소</button>
                     <button type="button">결재</button>
                 </div>

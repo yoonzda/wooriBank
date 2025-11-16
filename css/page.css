@@ -122,19 +122,23 @@ table{width: 100%;}
 
 .listContainer th,
 .detailContainer th,
-.applyContainer th{font-size: 15px; font-weight: 500; color: #222; background-color: rgba(243, 244, 246, 0.5);}
+.applyContainer th{font-size: 15px; font-weight: 500; color: #222; background-color: rgba(243, 244, 246, 0.5); padding-inline: 24px;}
 
 .listContainer td,
-.detailContainer td,
+.detailContainer td:not(.removeGutter),
 .applyContainer td{font-size: 15px; font-weight: 400; color: #434343; padding-inline: 24px;}
 
 .listContainer table th:not(:first-of-type),
 .listContainer table td:not(:first-of-type){border-left: 1px solid #E5E7EB;}
+/* .detailContainer table th:not(:first-of-type), */
+.detailContainer table td:first-of-type{border-left: 1px solid #E5E7EB;}
 .listContainer table th,
-.listContainer table tbody tr:not(:last-of-type) td{border-bottom: 1px solid #E5E7EB;}
+.listContainer table tbody tr:not(:last-of-type) td,
+.detailContainer table tr:not(:first-of-type) th{border-top: 1px solid #E5E7EB;}
+.detailContainer table tr:not(:last-of-type) td{border-bottom: 1px solid #E5E7EB;}
 
-.detailContainer table th,
-.detailContainer table td,
+/* .detailContainer table th, */
+/* .detailContainer table td, */
 .applyContainer table.hori th,
 .applyContainer table.hori td{border: 1px solid #E5E7EB;}
 
@@ -143,10 +147,10 @@ table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 
 table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
 
 .list.filter{display: flex; gap: 6px; margin-bottom: 16px;}
-.list.filter div:has(input[type="search"]){margin-left: auto; position: relative;}
-.list.filter input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px;}
-.list.filter input[type="search"]::placeholder{color: #999;}
-.list.filter div button[type="submit"]{text-indent: -9999px; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px; background-color: transparent; background-image: url('../images/woori_icon_search.svg'); background-repeat: no-repeat; background-position: center; border: none; cursor: pointer;}
+.list.filter .searchBox{margin-left: auto; position: relative;}
+.searchBox input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px;}
+.searchBox input[type="search"]::placeholder{color: #999;}
+.searchBox button[type="submit"]{text-indent: -9999px; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px; background-color: transparent; background-image: url('../images/woori_icon_search.svg'); background-repeat: no-repeat; background-position: center; border: none; cursor: pointer;}
 
 .listContainer .selectWrap{width: 120px;}
 .applyContainer .selectWrap{width: 160px;}
@@ -165,3 +169,29 @@ table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
 .selectWrap ul li{display: block; font-size: 14px; font-weight: 400; line-height: 140%; color: #434343; padding-block: 12px; cursor: pointer;}
 .selectWrap ul li:not(:last-of-type){border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
 .selectWrap ul li.active{text-decoration: underline; font-weight: 600; color: #007CC0;}
+
+[class*="Container"] h3{font-size: 18px; font-weight: 600; line-height: 140%; color: #222; margin-bottom: 16px;}
+[class*="Container"] h3.bul{padding-left: 28px; background-repeat: no-repeat; background-position: left center;}
+[class*="Container"] h3.clock{background-image: url('../images/woori_icon_logHistory.svg');}
+[class*="Container"] h3.payer{background-image: url('../images/woori_icon_payer.svg');}
+[class*="Container"] h3.proposer{background-image: url('../images/woori_icon_proposer.svg');}
+[class*="Container"] h3.user{background-image: url('../images/woori_icon_user.svg');}
+
+.detailContainer table th{min-width: 120px; box-sizing: border-box;}
+.detailContainer table input[type="radio"]{display: none;}
+.detailContainer table input[type="radio"]:checked+label{background-color: rgba(243, 244, 246, 0.5); border: 1px solid #007CC0; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);}
+.detailContainer table label{display: block; text-align: center; padding-inline: 24px; border: 1px solid transparent; border-radius: 10px; font-size: 15px; font-weight: 400; color: #434343;}
+
+.buttonBox button{border-radius: 8px; font-size: 16px; font-weight: 600; min-width: 130px; height: 46px; padding: 0; cursor: pointer;}
+.buttonBox button:first-of-type{border: 1px solid #DDD; background-color: #FFF; color: #222;}
+.buttonBox button:last-of-type{border: 1px solid transparent; background-color: #121212; color: #FFF;}
+.buttonBox.right{margin-top: 12px; display: flex; justify-content: flex-end; gap: 6px;}
+
+.detailContainer .payerInfo{display: flex; flex-direction: column;}
+.detailContainer .payerInfo .tableWrap{flex: 1;}
+.detailContainer .payerInfo table{height: 100%;}
+.detailContainer .payerInfo table tr:last-of-type{height: auto;}
+.detailContainer .proposerInfo table{height: 400px;}
+.detailContainer .proposerInfo table tr.heightFill{height: auto;}
+.detailContainer .proposerInfo table tr.heightFill th{vertical-align: middle; padding-block: 14px;}
+.detailContainer .proposerInfo table tr.heightFill td{vertical-align: middle; padding-block: 14px; line-height: 150%;}

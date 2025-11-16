@@ -11,7 +11,13 @@
 <body>
     <div class="layer">
         <div class="layerWrap">
-            <h3 class="bul">사용자 선택</h3>
+            <h3 class="bul user">사용자 선택</h3>
+            <div class="searchBox">
+                <form>
+                    <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
+                    <button type="submit">검색</button>
+                </form>
+            </div>
             <input type="search" name="" id="" placeholder="부서 / 이름 / 아이디를 입력해 주세요."/>
             <div>
                 <table>
@@ -177,7 +183,7 @@
         <div class="box">
             <ul>
                 <li>
-                    <h3 class="bul">사용자 선택</h3>
+                    <h3 class="bul user">사용자 선택</h3>
                     <table class="hori">
                         <colgroup>
                             <col width="8%">
@@ -187,7 +193,12 @@
                             <tr>
                                 <th>사용자</th>
                                 <td>
-                                    <input type="search" name="" id="" placeholder="사용자를 검색해 주세요.">
+                                    <div class="searchBox">
+                                        <form>
+                                            <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
+                                            <button type="submit">검색</button>
+                                        </form>
+                                    </div>
                                     <table class="verti">
                                         <colgroup>
                                             <col width="8%">
@@ -235,7 +246,7 @@
                     </table>
                 </li>
                 <li>
-                    <h3 class="bul">신청 정보</h3>
+                    <h3 class="bul proposer">신청 정보</h3>
                     <table class="hori">
                         <colgroup>
                             <col width="8%">
@@ -279,7 +290,7 @@
                     </table>
                 </li>
             </ul>
-            <div class="buttonRightBox">
+            <div class="buttonBox right">
                 <button type="button">취소</button>
                 <button type="button">확인</button>
             </div>
