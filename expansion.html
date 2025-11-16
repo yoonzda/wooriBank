@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리은행 VDI</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="layer">
+        <div class="layerWrap">
+            <h3 class="bul">사용자 선택</h3>
+            <input type="search" name="" id="" placeholder="부서 / 이름 / 아이디를 입력해 주세요."/>
+            <div>
+                <table>
+                    <colgroup>
+                        <col width="19%">
+                        <col width="27%">
+                        <col width="27%">
+                        <col width="27%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="" id="userAll">
+                                <label for="userAll"></label>
+                            </th>
+                            <th>부서</th>
+                            <th>아이디</th>
+                            <th>이름</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user1">
+                                <label for="user1"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user2">
+                                <label for="user2"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user3">
+                                <label for="user3"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user4">
+                                <label for="user4"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user5">
+                                <label for="user5"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user6">
+                                <label for="user6"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="user7">
+                                <label for="user7"></label>
+                            </td>
+                            <td>dept1</td>
+                            <td>on</td>
+                            <td>test1nm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button type="button">닫기</button>
+                <button type="button">확인</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="headerWrap">
+            <div class="headerWhite">
+                <div>
+                    <ul>
+                        <li><a href=""><img src="images/woori_logo.svg" alt="woori bank logo"></a></li>
+                        <li><a href=""><img src="images/woori_logo_VDI.svg" alt="woori bank VDI logo"></a></li>
+                    </ul>
+                    <ul>
+                        <li><span>kimgr001</span></li>
+                        <li><button type="button" class="btn gray">로그아웃</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ol>
+                        <li><a href="index.html" class="chip blue">Home</a></li>
+                        <li><a href="management.html" class="chip blue active">VDI 신청 관리</a></li>
+                        <li><a href="notice.html" class="chip blue">공지사항</a></li>
+                        <li><a href="faq.html" class="chip blue">FAQ</a></li>
+                        <li><a href="qna.html" class="chip blue">Q&A</a></li>
+                    </ol>
+                    <ol>
+                        <li><button type="button" class="btn gray">강제 재시작</button></li>
+                        <li><button type="button" class="btn gray">셀프 파일 복구</button></li>
+                        <li><button type="button" class="btn gray">VDI Client 다운로드</button></li>
+                        <li><button type="button" class="btn gray">Plugin 다운로드</button></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="headerGradation">
+                <p>안전하고 빠른 가상 데스크톱 환경에 접속하여 언제 어디서나 업무를 시작하세요.</p>
+            </div>
+        </div>
+    </header>
+    <div class="applyContainer">
+        <ul class="tabList">
+            <li><a href="management_list.html">신청 관리</a></li>
+            <li><a href="apply.html">VDI 사용신청</a></li>
+            <li class="active"><a href=expansion.html"">VDI 리소스 증설</a></li>
+        </ul>
+        <div class="box">
+            <table>
+                <colgroup>
+                    <col width="6%">
+                    <col width="25%">
+                    <col width="25%">
+                    <col width="44%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>가상 PC 유형</th>
+                        <th>OS 종류</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="radio" name="selectType" id="selectType1">
+                            <label for="selectType1"></label>
+                        </td>
+                        <td>CL8-전용-W10</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="box">
+            <ul>
+                <li>
+                    <h3 class="bul">신청 정보</h3>
+                    <table>
+                        <colgroup>
+                            <col width="8%">
+                            <col width="92%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>가상 PC 정보</th>
+                                <td>
+                                    <ol>
+                                        <li>
+                                            <input type="radio" name="selectYear" id="year1"/>
+                                            <label for="year1">1년</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="selectYear" id="year2"/>
+                                            <label for="year2">2년</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="selectYear" id="year3"/>
+                                            <label for="year3">3년</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="selectYear" id="year4"/>
+                                            <label for="year4">4년</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="selectYear" id="year5"/>
+                                            <label for="year5">5년</label>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>CPU(Core)</th>
+                                <td>
+                                    <ul>
+                                        <li>CPU(Core) 01</li>
+                                        <li>CPU(Core) 02</li>
+                                        <li>CPU(Core) 03</li>
+                                        <li>CPU(Core) 04</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>메모리(GB)</th>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>신청 사유</th>
+                                <td>
+                                    <textarea name="" id="" placeholder="신청 사유를 입력해 주세요."></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+            <div class="buttonRightBox">
+                <button type="button">취소</button>
+                <button type="button">확인</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><img src="images/woori_logo_gray.svg" alt="woori bank logo"></li>
+            <li><img src="images/woori_logo_VDI_gray.svg" alt="woori bank VDI logo"></li>
+        </ul>
+        <div>
+            <p>
+                <b>불법적인 접근 및 사용시 관련 법규에 의해 처벌될 수 있습니다.</b>
+                Copyright ⓒ All right reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

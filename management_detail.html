@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리은행 VDI</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="headerWhite">
+                <div>
+                    <ul>
+                        <li><a href=""><img src="images/woori_logo.svg" alt="woori bank logo"></a></li>
+                        <li><a href=""><img src="images/woori_logo_VDI.svg" alt="woori bank VDI logo"></a></li>
+                    </ul>
+                    <ul>
+                        <li><span>kimgr001</span></li>
+                        <li><button type="button" class="btn gray">로그아웃</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ol>
+                        <li><a href="index.html" class="chip blue">Home</a></li>
+                        <li><a href="management.html" class="chip blue active">VDI 신청 관리</a></li>
+                        <li><a href="notice.html" class="chip blue">공지사항</a></li>
+                        <li><a href="faq.html" class="chip blue">FAQ</a></li>
+                        <li><a href="qna.html" class="chip blue">Q&A</a></li>
+                    </ol>
+                    <ol>
+                        <li><button type="button" class="btn gray">강제 재시작</button></li>
+                        <li><button type="button" class="btn gray">셀프 파일 복구</button></li>
+                        <li><button type="button" class="btn gray">VDI Client 다운로드</button></li>
+                        <li><button type="button" class="btn gray">Plugin 다운로드</button></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="headerGradation">
+                <p>안전하고 빠른 가상 데스크톱 환경에 접속하여 언제 어디서나 업무를 시작하세요.</p>
+            </div>
+        </div>
+    </header>
+    <div class="detailContainer">
+        <ul class="tabList">
+            <li class="active"><a href="management_list.html">신청 관리</a></li>
+            <li><a href="apply.html">VDI 사용신청</a></li>
+            <li><a href=expansion.html"">VDI 리소스 증설</a></li>
+        </ul>
+        <div class="detailWrap">
+            <div class="payerInfo box">
+                <h3 class="bul ">결재자 정보</h3>
+                <table>
+                    <colgroup>
+                        <col width="37.5%">
+                        <col width="62.5%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>기본 결재자</th>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer1">
+                                <label for="payer1">test1(test1nm)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="6">대우 결재자</th>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer2">
+                                <label for="payer2">test2(test2nm)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer3">
+                                <label for="payer3">test3(test3nm)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer4">
+                                <label for="payer4">test4(test4nm)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer5">
+                                <label for="payer5">test5(test5nm)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer6">
+                                <label for="payer6">test6(test6nm)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="payerInfo" id="payer7">
+                                <label for="payer7">test7(test7nm)</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="proposerInfo box">
+                <h3 class="bul">신청 정보</h3>
+                <table>
+                    <colgroup>
+                        <col width="18%">
+                        <col width="82%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>신청자</th>
+                            <td>KIMGR001 ()</td>
+                        </tr>
+                        <tr>
+                            <th>사용자</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>데스크탑 풀</th>
+                            <td>testdeskpool (CL8-DEDI-Test)</td>
+                        </tr>
+                        <tr>
+                            <th>만료일</th>
+                            <td>2025.10.01</td>
+                        </tr>
+                        <tr>
+                            <th>신청 사유</th>
+                            <td>예외 권한 신청 test</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttonRightBox">
+                    <button type="button">취소</button>
+                    <button type="button">결재</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><img src="images/woori_logo_gray.svg" alt="woori bank logo"></li>
+            <li><img src="images/woori_logo_VDI_gray.svg" alt="woori bank VDI logo"></li>
+        </ul>
+        <div>
+            <p>
+                <b>불법적인 접근 및 사용시 관련 법규에 의해 처벌될 수 있습니다.</b>
+                Copyright ⓒ All right reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
