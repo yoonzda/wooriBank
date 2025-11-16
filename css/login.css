@@ -433,13 +433,13 @@
   line-height: 1.4;
 }
 
-footer {
+#login footer {
   mix-blend-mode: luminosity;
   max-width: 1350px;
   display: flex;
   gap: 32px;
   margin: 0 auto;
-  padding: 36px 4%;
+  padding: 36px 0;
 }
 footer ul {
   display: flex;
