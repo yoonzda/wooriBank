@@ -40,6 +40,11 @@
   height: 29px;
 }
 
+.loginContainer .left_box .logo a {
+  display: inline-block;
+  height: 29px;
+}
+
 .loginContainer .left_box .txtBox {
   text-align: center;
 }
@@ -129,10 +134,8 @@
 
 .loginContainer .conBox .con .header .iconBox {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
+  width: 22px;
+  height: 22px;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
@@ -141,7 +144,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
+  width: 22px;
+  height: 22px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   opacity: 0.3;
@@ -154,6 +158,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  width: 12px;
+  height: 12px;
 }
 
 
