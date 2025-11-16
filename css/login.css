@@ -356,33 +356,29 @@ input[type="password"]:focus {
   font-weight: 500;
 }
 
+.right_box .checkBox label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+}
+
 .right_box .checkBox .IdCheck {
   position: relative;
   appearance: none;
   -webkit-appearance: none;
+  cursor: pointer;
   width: 16px;
   height: 16px;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  cursor: pointer;
+  background-image: url('../images/woori_checkbox_off.svg');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position:center;
 }
 
-.IdCheck:checked {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.IdCheck:checked::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  display: block;
-  top: 40%;
-  left: 40%;
-  transform: translate(-40%, -40%);
-  font-size: 10px;
-  font-weight: 900;
-  color: #fff;
+.right_box .checkBox .IdCheck:checked {
+  background-image: url('../images/woori_checkbox_on.svg');
 }
 
 .right_box .loginBtn {
@@ -597,45 +593,30 @@ footer p b {
 
 .seeMoreBtn {
   margin: 12px auto 0 auto;
-}
-
-.seeMoreBtn label {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 }
 
-.seeMoreBtn label .noMore {
+.seeMoreBtn .noMore {
   position: relative;
   appearance: none;
   -webkit-appearance: none;
+  cursor: pointer;
   width: 16px;
   height: 16px;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  cursor: pointer;
+  background-image: url('../images/woori_checkbox_off.svg');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position:center;
 }
 
 .noMore:checked {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-image: url('../images/woori_checkbox_on.svg');
 }
 
-.noMore:checked::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  display: block;
-  top: 40%;
-  left: 40%;
-  transform: translate(-40%, -40%);
-  font-size: 10px;
-  font-weight: 900;
-  color: #fff;
-}
-
-.seeMoreBtn label span {
+.seeMoreBtn label {
   font-size: 14px;
   font-weight: 500;
   color: #666;
