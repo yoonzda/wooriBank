@@ -88,6 +88,30 @@
 .tabList li a{display: block; text-decoration: none; font-size: 16px; color: inherit; line-height: 46px;}
 
 table{width: 100%;}
+.tableWrap{border-radius: 12px; border: 1px solid #E5E7EB;}
+.listTable tr:has(td){cursor: pointer;}
+.listTable td:not(.alignLeft){text-align: center;}
+.listTable td{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tablePager{position: relative; padding-inline: 60px; width: fit-content; margin: 24px auto 0;}
+.tablePager div{position: absolute;}
+.tablePager div.leftBtnBox{left: 0;}
+.tablePager div.rightBtnBox{right: 0;}
+.tablePager div a{display: inline-block; text-indent: -9999px; width: 12px; height: 30px; background-repeat: no-repeat; background-position: center;}
+.tablePager div.leftBtnBox a:first-of-type{background-image: url('../images/woori_icon_pager_first.svg');}
+.tablePager div.leftBtnBox a:last-of-type{background-image: url('../images/woori_icon_pager_prev.svg'); margin-left: 8px;}
+.tablePager div.rightBtnBox a:first-of-type{background-image: url('../images/woori_icon_pager_next.svg'); margin-right: 8px;}
+.tablePager div.rightBtnBox a:last-of-type{background-image: url('../images/woori_icon_pager_last.svg');}
+.tablePager ol{display: flex; justify-content: center;}
+.tablePager ol li{display: block; width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px;}
+.tablePager ol li:not(.active){font-weight: 500; color: #434343;}
+.tablePager ol li.active{font-weight: 700; color: #3C83F6; background-color: rgba(60, 131, 246, 0.1);}
+.tablePager ol li a{display: block; text-decoration: none; font-size: 13px; color: inherit;}
+
 .detailWrap{display: flex; gap: 20px;}
 .detailWrap .payerInfo.box{max-width: 380px;}
 .detailWrap .proposerInfo.box{flex: 1;}
@@ -104,8 +128,11 @@ table{width: 100%;}
 .detailContainer td,
 .applyContainer td{font-size: 15px; font-weight: 400; color: #434343; padding-inline: 24px;}
 
+.listContainer table th:not(:first-of-type),
+.listContainer table td:not(:first-of-type){border-left: 1px solid #E5E7EB;}
 .listContainer table th,
-.listContainer table td,
+.listContainer table tbody tr:not(:last-of-type) td{border-bottom: 1px solid #E5E7EB;}
+
 .detailContainer table th,
 .detailContainer table td,
 .applyContainer table.hori th,
@@ -115,18 +142,25 @@ table.verti{border-radius: 12px; border: 1px solid #E5E7EB;}
 table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
 table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
 
-.list.filter{display: flex; gap: 6px;}
-.list.filter input[type="search"]{margin-left: auto;}
+.list.filter{display: flex; gap: 6px; margin-bottom: 16px;}
+.list.filter div:has(input[type="search"]){margin-left: auto;}
+.list.filter input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px; background-image: url('../images/woori_icon_search.svg'); background-position: 228px center; background-repeat: no-repeat;}
+.list.filter input[type="search"]::placeholder{color: #999;}
 
-.list.filter div{position: relative; width: 120px;}
-.list.filter div button{font-size: 16px; font-weight: 500; line-height: 140%; color: #222; padding: 12px 24px; background-color: rgba(243, 244, 246, 0.5); border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; width: 100%; text-align: left; cursor: pointer; position: relative;}
-.list.filter div button::after{content: ''; display: block; width: 16px; height: 16px; background-image: url('../images/woori_icon_arrow_select.svg'); position: absolute; right: 24px; top: 16px; transition: transform ease-out .4s;}
-.list.filter div button.active::after{transform: rotate(180deg);}
-.list.filter div button:not(.active)+ul{display: none;}
-.list.filter div button.active+ul{display: block;}
+.listContainer .selectWrap{width: 120px;}
+.applyContainer .selectWrap{width: 160px;}
 
-.list.filter ul{position: absolute; width: 100%; transform: translate(0, 8px); padding: 6px 24px; background-color: #FFF; border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; height: 200px; overflow-y: scroll; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);}
-.list.filter ul::-webkit-scrollbar {display: none;}
-.list.filter ul li{display: block; font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; padding-block: 12px; cursor: pointer;}
-.list.filter ul li:not(:last-of-type){border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
-.list.filter ul li.active{text-decoration: underline; font-weight: 600; color: #007CC0;}
+.selectWrap{position: relative; height: 40px;}
+.selectWrap button{height: 40px; font-size: 14px; font-weight: 400; color: #222; padding: 0 12px; background-color: #FFF; border-radius: 10px; box-sizing: border-box; width: 100%; text-align: left; cursor: pointer; position: relative;}
+.selectWrap button:not(.active){border: 1px solid #EBEBEB;}
+.selectWrap button.active{border: 2px solid #007CC0;}
+.selectWrap button::after{content: ''; display: block; width: 16px; height: 16px; background-image: url('../images/woori_icon_arrow_select.svg'); position: absolute; right: 12px; top: 10px; transition: transform ease-out .4s;}
+.selectWrap button.active::after{transform: rotate(180deg);}
+.selectWrap button:not(.active)+ul{display: none;}
+.selectWrap button.active+ul{display: block;}
+
+.selectWrap ul{position: absolute; z-index: 1; width: 100%; transform: translate(0, 8px); padding: 6px 12px; background-color: #FFF; border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; height: 200px; overflow-y: scroll; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);}
+.selectWrap ul::-webkit-scrollbar {display: none;}
+.selectWrap ul li{display: block; font-size: 14px; font-weight: 400; line-height: 140%; color: #434343; padding-block: 12px; cursor: pointer;}
+.selectWrap ul li:not(:last-of-type){border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+.selectWrap ul li.active{text-decoration: underline; font-weight: 600; color: #007CC0;}

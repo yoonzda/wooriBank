@@ -51,7 +51,7 @@
         </ul>
         <div class="list box">
             <div class="list filter">
-                <div>
+                <div class="selectWrap">
                     <button type="button" class="selectCustom" id="filter2">전체</button>
                     <ul class="selectList" data-select="filter2">
                         <li class="active">전체</li>
@@ -61,7 +61,7 @@
                         <li>상태</li>
                     </ul>
                 </div>
-                <div>
+                <div class="selectWrap">
                     <button type="button" class="selectCustom" id="filter3">전체</button>
                     <ul class="selectList" data-select="filter3">
                         <li class="active">전체</li>
@@ -71,75 +71,82 @@
                         <li>상태</li>
                     </ul>
                 </div>
-                <input type="search" name="" id="">
+                <div>
+                    <form>
+                        <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
+                        <button type="submit">검색</button>
+                    </form>
+                </div>
             </div>
             <div>
-                <table>
-                    <colgroup>
-                        <col width="20%">
-                        <col width="50%">
-                        <col width="15%">
-                        <col width="15%">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>신청항목</th>
-                            <th>신청사유</th>
-                            <th>신청일자</th>
-                            <th>상태</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>신청대기</td>
-                        </tr>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>신청대기</td>
-                        </tr>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>접수완료</td>
-                        </tr>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>접수완료</td>
-                        </tr>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>진행중</td>
-                        </tr>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>진행중</td>
-                        </tr>
-                        <tr onClick="location.href='management_detail.html'">
-                            <td>가상 PC 리소스 증설</td>
-                            <td>신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
-                            <td>20205.09.05</td>
-                            <td>완료</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div>
-                    <div>
+                <div class="tableWrap">
+                    <table class="listTable" valign=middle>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="50%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>신청항목</th>
+                                <th>신청사유</th>
+                                <th>신청일자</th>
+                                <th>상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>신청대기</span></td>
+                            </tr>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>신청대기</span></td>
+                            </tr>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>접수완료</span></td>
+                            </tr>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>접수완료</span></td>
+                            </tr>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>진행중</span></td>
+                            </tr>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>진행중</span></td>
+                            </tr>
+                            <tr onClick="location.href='management_detail.html'">
+                                <td>가상 PC 리소스 증설</td>
+                                <td class="alignLeft">신청사유 제목이 들어갈 공간입니다. 신청사유 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05</td>
+                                <td><span>완료</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tablePager">
+                    <div class="leftBtnBox">
                         <a href="javascript:void(0)">first</a>
                         <a href="javascript:void(0)">prev</a>
                     </div>
-                    <div>
+                    <div class="rightBtnBox">
                         <a href="javascript:void(0)">next</a>
                         <a href="javascript:void(0)">last</a>
                     </div>
