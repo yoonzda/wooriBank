@@ -143,9 +143,10 @@ table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 
 table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
 
 .list.filter{display: flex; gap: 6px; margin-bottom: 16px;}
-.list.filter div:has(input[type="search"]){margin-left: auto;}
-.list.filter input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px; background-image: url('../images/woori_icon_search.svg'); background-position: 228px center; background-repeat: no-repeat;}
+.list.filter div:has(input[type="search"]){margin-left: auto; position: relative;}
+.list.filter input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px;}
 .list.filter input[type="search"]::placeholder{color: #999;}
+.list.filter div button[type="submit"]{text-indent: -9999px; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px; background-color: transparent; background-image: url('../images/woori_icon_search.svg'); background-repeat: no-repeat; background-position: center; border: none; cursor: pointer;}
 
 .listContainer .selectWrap{width: 120px;}
 .applyContainer .selectWrap{width: 160px;}
