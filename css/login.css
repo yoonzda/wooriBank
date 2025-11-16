@@ -187,7 +187,7 @@
   position: relative;
   display: flex;
   margin-top: 16px;
-  gap: 68px;
+  gap:80px;
 }
 
 .loginContainer .conBox .numBox {
@@ -203,14 +203,14 @@
   display: block;
   position: absolute;
   top: 0%;
-  left: 200px;
+  left: 180px;
   width: 1px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .loginContainer .help_box .desc h4 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   letter-spacing: -0.03em;
   line-height: 1.4;
@@ -306,17 +306,20 @@
 }
 
 .right_box .input_box input {
+  display: inline-block;
   background: #f7f7f8;
   border: 1px solid #e5e7eb;
   border-top: none;
   border-bottom: none;
   border-right: none;
-  width: 95%;
-  height: 100%;
+  border-left: none;
+  width: 90%;
+  height: 95%;
   outline: 0;
-  padding: 0 0 0 12px;
   border-radius: 6px;
   color: #434343;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .right_box .input_box .userPw {
@@ -379,6 +382,7 @@
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position:center;
+  margin: 0;
 }
 
 .right_box .checkBox .IdCheck:checked {
@@ -401,7 +405,6 @@
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.4;
-  font-family: unset;
 }
 
 .right_box .passwordBox {
@@ -496,10 +499,6 @@ footer p b {
   overflow-y: scroll;
 }
 
-.modal-content .con_wrap .scrollBox .subtxt {
-  padding-left: 12px;
-}
-
 .modal-content .con_wrap .scrollBox::-webkit-scrollbar {
   width: 4px;
   height: 270px;
@@ -528,6 +527,7 @@ footer p b {
 .modal-content .con_wrap .scrollBox .subtxt p {
   word-break: keep-all;
   margin-bottom: 12px;
+  padding-left: 12px;
 }
 
 .modal-content .con_wrap .scrollBox .subtxt p:last-child {
