@@ -172,7 +172,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 177px;
+  width:300px;
 }
 
 .loginContainer .conBox .noticeBox .desc li span {
@@ -187,7 +187,7 @@
   position: relative;
   display: flex;
   margin-top: 16px;
-  gap: 70px;
+  gap: 68px;
 }
 
 .loginContainer .conBox .numBox {
@@ -228,6 +228,10 @@
 
 .right_box {
   padding: 48px 45px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .right_box .formBox {
@@ -307,11 +311,16 @@
   border-top: none;
   border-bottom: none;
   border-right: none;
-  width: 85%;
+  width: 95%;
   height: 100%;
   outline: 0;
   padding: 0 0 0 12px;
   border-radius: 6px;
+  color: #434343;
+}
+
+.right_box .input_box .userPw {
+  width: 85%;
 }
 
 .right_box .input_box input::placeholder {
@@ -319,11 +328,6 @@
   letter-spacing: -0.03em;
   line-height: 1.4;
   color: #666;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  color: #434343;
 }
 
 .right_box .input_box .inputCon .toggle-password {
@@ -408,10 +412,12 @@ input[type="password"]:focus {
 }
 
 .passwordBox .passwordChange {
+  display: inline-block;
   color: #2a6df4;
   font-size: 14px;
   letter-spacing: -0.03em;
   line-height: 1.4;
+  text-decoration:none;
 }
 
 .passwordBox .downBox a {
