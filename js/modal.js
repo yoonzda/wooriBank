@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentType === "password") {
       // 현재 password이면 text로 변경하여 비밀번호를 보이게 합니다.
       passwordInput.setAttribute("type", "text");
-      toggleButtonImg.src = "/images/woori_password_off.svg";
+      toggleButtonImg.src = "images/woori_password_on.svg";
     } else {
       passwordInput.setAttribute("type", "password");
-      toggleButtonImg.src = "/images/woori_password_on";
+      toggleButtonImg.src = "images/woori_password_off.svg";
     }
   });
 
