@@ -88,7 +88,7 @@
 .tabList li a{display: block; text-decoration: none; font-size: 16px; color: inherit; line-height: 46px;}
 
 table{width: 100%;}
-.tableWrap{border-radius: 12px; border: 1px solid #E5E7EB;}
+.tableWrap{border-radius: 12px; border: 1px solid #E5E7EB; overflow: hidden;}
 .listTable tr:has(td){cursor: pointer;}
 .listTable td:not(.alignLeft){text-align: center;}
 .listTable td{
@@ -134,21 +134,26 @@ table{width: 100%;}
 .detailContainer table td:first-of-type{border-left: 1px solid #E5E7EB;}
 .listContainer table th,
 .listContainer table tbody tr:not(:last-of-type) td,
-.detailContainer table tr:not(:first-of-type) th{border-top: 1px solid #E5E7EB;}
 .detailContainer table tr:not(:last-of-type) td{border-bottom: 1px solid #E5E7EB;}
+
+.detailContainer table tr:not(:first-of-type) th{border-top: 1px solid #E5E7EB;}
+.applyContainer table tr:not(:first-of-type){border-top: 1px solid #E5E7EB;}
 
 /* .detailContainer table th, */
 /* .detailContainer table td, */
-.applyContainer table.hori th,
-.applyContainer table.hori td{border: 1px solid #E5E7EB;}
+/* .applyContainer table.hori th, */
+.applyContainer table.hori>tbody>tr>td{border-left: 1px solid #E5E7EB;}
 
-table.verti{border-radius: 12px; border: 1px solid #E5E7EB;}
+/* table.verti{border-radius: 12px; border: 1px solid #E5E7EB;} */
 table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
 table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
+table.verti tbody tr td{text-align: center;}
 
 .list.filter{display: flex; gap: 6px; margin-bottom: 16px;}
-.list.filter .searchBox{margin-left: auto; position: relative;}
-.searchBox input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px;}
+.list.filter .searchBox{margin-left: auto;}
+.searchBox{position: relative; height: 40px; display: inline-block;}
+.searchBox form{height: inherit;}
+.searchBox input[type="search"]{ padding-inline: 16px 36px; font-size: 14px; font-weight: 400; color: #434343; border: 1px solid #EBEBEB; width: 260px; height: 40px; border-radius: 50px; vertical-align: top;}
 .searchBox input[type="search"]::placeholder{color: #999;}
 .searchBox button[type="submit"]{text-indent: -9999px; position: absolute; right: 16px; top: 12px; width: 16px; height: 16px; background-color: transparent; background-image: url('../images/woori_icon_search.svg'); background-repeat: no-repeat; background-position: center; border: none; cursor: pointer;}
 
@@ -195,3 +200,30 @@ table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
 .detailContainer .proposerInfo table tr.heightFill{height: auto;}
 .detailContainer .proposerInfo table tr.heightFill th{vertical-align: middle; padding-block: 14px;}
 .detailContainer .proposerInfo table tr.heightFill td{vertical-align: middle; padding-block: 14px; line-height: 150%;}
+
+.applyContainer .select.box{margin-bottom: 20px;}
+.applyContainer table.verti tr th{vertical-align: middle; min-width: 80px;}
+.applyContainer table.verti tr td{vertical-align: middle;}
+.applyContainer table.verti input[type="radio"]{display: none;}
+.applyContainer table.verti input[type="radio"]:checked+label{background-image: url('../images/woori_radio_on.svg');}
+.applyContainer table.verti label{background-image: url('../images/woori_radio_off.svg'); background-repeat: no-repeat; background-position: center; width: 16px; height: 16px; display: inline-block; text-indent: -9999px; vertical-align: middle; cursor: pointer;}
+.applyContainer table.hori>tbody>tr>th{min-width: 160px; box-sizing: border-box;}
+
+.applyContainer .info.box ul li{display: block;}
+.applyContainer .info.box ul>li:not(:last-of-type){margin-bottom: 40px;}
+.applyContainer .info.box table.innerGutter>tbody>tr>td{padding-block: 24px;}
+.innerGutter{padding-block: 24px;}
+.applyContainer .info.box td div.tableWrap{height: 200px; overflow: auto;}
+.applyContainer .info.box td div.tableWrap thead{position: sticky; top: 0;}
+.applyContainer .info.box td div.tableWrap thead th{background-color: #F9FAFB;}
+
+.applyContainer .info.box td ol{display: flex; gap: 60px;}
+.applyContainer .info.box td ol li{height: auto;}
+.applyContainer .info.box td ol li input[type="radio"]{display: none;}
+.applyContainer .info.box td ol li input[type="radio"]:checked+label{background-image: url('../images/woori_radio_on.svg');}
+.applyContainer .info.box td ol li label{padding-left: 24px; background-image: url('../images/woori_radio_off.svg'); background-position: left center; background-repeat: no-repeat; cursor: pointer;}
+
+.applyContainer tr:has(textarea) th{vertical-align: middle;}
+.applyContainer textarea{width: 100%; min-height: 150px; border-radius: 12px; border: 1px solid #EBEBEB; padding: 16px; font-size: 15px; font-weight: 400; color: #434343; box-sizing: border-box;}
+.applyContainer textarea::placeholder{color: #999;}
+.applyContainer textarea:focus{outline: none;}

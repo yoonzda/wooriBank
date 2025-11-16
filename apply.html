@@ -151,143 +151,172 @@
             <li class="active"><a href="apply.html">VDI 사용신청</a></li>
             <li><a href="expansion.html">VDI 리소스 증설</a></li>
         </ul>
-        <div class="box">
-            <table class="verti">
-                <colgroup>
-                    <col width="6%">
-                    <col width="25%">
-                    <col width="25%">
-                    <col width="44%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>선택</th>
-                        <th>가상 PC 유형</th>
-                        <th>OS 종류</th>
-                        <th>설명</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="radio" name="selectType" id="selectType1">
-                            <label for="selectType1"></label>
-                        </td>
-                        <td>CL8-전용-W10</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="select box">
+            <div class="tableWrap">
+                <table class="verti">
+                    <colgroup>
+                        <col width="6%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="44%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>선택</th>
+                            <th>가상 PC 유형</th>
+                            <th>OS 종류</th>
+                            <th>설명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="selectType" id="selectType1">
+                                <label for="selectType1">select type 1</label>
+                            </td>
+                            <td>CL8-전용-W10</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="box">
+        <div class="info box">
             <ul>
                 <li>
                     <h3 class="bul user">사용자 선택</h3>
-                    <table class="hori">
-                        <colgroup>
-                            <col width="8%">
-                            <col width="92%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>사용자</th>
-                                <td>
-                                    <div class="searchBox">
-                                        <form>
-                                            <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
-                                            <button type="submit">검색</button>
-                                        </form>
-                                    </div>
-                                    <table class="verti">
-                                        <colgroup>
-                                            <col width="8%">
-                                            <col width="27%">
-                                            <col width="27%">
-                                            <col width="27%">
-                                            <col width="11%">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th>NO</th>
-                                                <th>부서</th>
-                                                <th>아이디</th>
-                                                <th>이름</th>
-                                                <th>비고</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>dept1</td>
-                                                <td>on</td>
-                                                <td>test1nm</td>
-                                                <td><button type="button">삭제</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>dept1</td>
-                                                <td>on</td>
-                                                <td>test1nm</td>
-                                                <td><button type="button">삭제</button></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>dept1</td>
-                                                <td>on</td>
-                                                <td>test1nm</td>
-                                                <td><button type="button">삭제</button></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="tableWrap">
+                        <table class="hori innerGutter">
+                            <colgroup>
+                                <col width="8%">
+                                <col width="92%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사용자</th>
+                                    <td>
+                                        <div class="searchBox">
+                                            <form>
+                                                <input type="search" name="" id="" placeholder="사용자를 검색해 주세요.">
+                                                <button type="submit">검색</button>
+                                            </form>
+                                        </div>
+                                        <div class="tableWrap">
+                                            <table class="verti">
+                                                <colgroup>
+                                                    <col width="8%">
+                                                    <col width="27%">
+                                                    <col width="27%">
+                                                    <col width="27%">
+                                                    <col width="11%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>NO</th>
+                                                        <th>부서</th>
+                                                        <th>아이디</th>
+                                                        <th>이름</th>
+                                                        <th>비고</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>dept1</td>
+                                                        <td>on</td>
+                                                        <td>test1nm</td>
+                                                        <td><button type="button" class="state white">삭제</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>dept1</td>
+                                                        <td>on</td>
+                                                        <td>test1nm</td>
+                                                        <td><button type="button" class="state white">삭제</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>dept1</td>
+                                                        <td>on</td>
+                                                        <td>test1nm</td>
+                                                        <td><button type="button" class="state white">삭제</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>dept1</td>
+                                                        <td>on</td>
+                                                        <td>test1nm</td>
+                                                        <td><button type="button" class="state white">삭제</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>dept1</td>
+                                                        <td>on</td>
+                                                        <td>test1nm</td>
+                                                        <td><button type="button" class="state white">삭제</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>dept1</td>
+                                                        <td>on</td>
+                                                        <td>test1nm</td>
+                                                        <td><button type="button" class="state white">삭제</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </li>
                 <li>
                     <h3 class="bul proposer">신청 정보</h3>
-                    <table class="hori">
-                        <colgroup>
-                            <col width="8%">
-                            <col width="92%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>만료일</th>
-                                <td>
-                                    <ol>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year1"/>
-                                            <label for="year1">1년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year2"/>
-                                            <label for="year2">2년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year3"/>
-                                            <label for="year3">3년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year4"/>
-                                            <label for="year4">4년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year5"/>
-                                            <label for="year5">5년</label>
-                                        </li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>신청 사유</th>
-                                <td>
-                                    <textarea name="" id="" placeholder="신청 사유를 입력해 주세요."></textarea>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="tableWrap">
+                        <table class="hori">
+                            <colgroup>
+                                <col width="8%">
+                                <col width="92%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>만료일</th>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <input type="radio" name="selectYear" id="year1"/>
+                                                <label for="year1">1년</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="selectYear" id="year2"/>
+                                                <label for="year2">2년</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="selectYear" id="year3"/>
+                                                <label for="year3">3년</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="selectYear" id="year4"/>
+                                                <label for="year4">4년</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="selectYear" id="year5"/>
+                                                <label for="year5">5년</label>
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>신청 사유</th>
+                                    <td class="innerGutter">
+                                        <textarea name="" id="" placeholder="신청 사유를 입력해 주세요."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </li>
             </ul>
             <div class="buttonBox right">
