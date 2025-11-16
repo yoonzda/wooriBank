@@ -7,11 +7,13 @@ function selectCustom(){
         $(this).toggleClass('active');
     });
     $('.selectList li').click(function(){
-        console.log(1);
-        $('.selectList li').removeClass('active');
+        $(this).siblings().removeClass('active');
         $(this).addClass('active');
-        $('.selectCustom').toggleClass('active');
-        $('.selectCustom').text($(this).text());
+
+        var currentID = this.parentNode.dataset['select'];
+        
+        $('#'+currentID).toggleClass('active');
+        $('#'+currentID).text($(this).text());
     });
     $('.windowSelect li').click(function(){
         $('.windowSelect li').removeClass('active');

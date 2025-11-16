@@ -1,5 +1,6 @@
 *{font-family: 'Pretendard';}
 a{color: inherit;}
+table textarea{resize: none;}
 
 body{background-color: #F9F9FA;}
 
@@ -24,7 +25,7 @@ header div.headerGradation{position: absolute; z-index: -1; background: linear-g
 header div.headerGradation p{text-align: center; font-size: 17px; font-weight: 600; line-height: 140%; color: #FFF; letter-spacing: -0.5px;}
 
 footer{mix-blend-mode: luminosity; max-width: 1350px; display: flex; gap: 32px; margin: 0 auto; padding: 36px 4%;}
-footer ul{display: flex; gap: 24px;}
+footer ul{display: flex; gap: 24px; align-items: center;}
 footer ul li{display: block;}
 footer p{font-size: 12px; font-weight: 400; color: #999999; line-height: 140%;}
 footer p b{font-weight: 600; display: block;}

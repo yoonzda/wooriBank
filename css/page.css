@@ -17,7 +17,7 @@
 .server.box button.active::after{transform: rotate(180deg);}
 .server.box button:not(.active)+ol{display: none;}
 .server.box button.active+ol{display: block;}
-.server.box ol{position: absolute; background-color: tomato; width: calc(100% - 48px); transform: translate(0, 8px); padding: 6px 24px; background-color: #FFF; border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; height: 200px; overflow-y: scroll; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);}
+.server.box ol{position: absolute; width: calc(100% - 48px); transform: translate(0, 8px); padding: 6px 24px; background-color: #FFF; border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; height: 200px; overflow-y: scroll; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);}
 .server.box ol::-webkit-scrollbar {display: none;}
 .server.box ol li{display: block; font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; padding-block: 12px; cursor: pointer;}
 .server.box ol li:not(:last-of-type){border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
@@ -87,16 +87,46 @@
 .tabList li.active{background: linear-gradient(135deg, #2A6DF4, #9952E0); box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); font-weight: 800; color: #FFF;}
 .tabList li a{display: block; text-decoration: none; font-size: 16px; color: inherit; line-height: 46px;}
 
+table{width: 100%;}
+.detailWrap{display: flex; gap: 20px;}
+.detailWrap .payerInfo.box{max-width: 380px;}
+.detailWrap .proposerInfo.box{flex: 1;}
+
+.listContainer tr,
+.detailContainer tr,
+.applyContainer tr{height: 50px; line-height: 50px;}
+
 .listContainer th,
 .detailContainer th,
 .applyContainer th{font-size: 15px; font-weight: 500; color: #222; background-color: rgba(243, 244, 246, 0.5);}
 
+.listContainer td,
+.detailContainer td,
+.applyContainer td{font-size: 15px; font-weight: 400; color: #434343; padding-inline: 24px;}
+
 .listContainer table th,
 .listContainer table td,
 .detailContainer table th,
-.detailContainer table td{border: 1px solid #E5E7EB;}
+.detailContainer table td,
+.applyContainer table.hori th,
+.applyContainer table.hori td{border: 1px solid #E5E7EB;}
 
-/* table.verti{background-color: tomato;} */
 table.verti{border-radius: 12px; border: 1px solid #E5E7EB;}
 table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
 table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
+
+.list.filter{display: flex; gap: 6px;}
+.list.filter input[type="search"]{margin-left: auto;}
+
+.list.filter div{position: relative; width: 120px;}
+.list.filter div button{font-size: 16px; font-weight: 500; line-height: 140%; color: #222; padding: 12px 24px; background-color: rgba(243, 244, 246, 0.5); border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; width: 100%; text-align: left; cursor: pointer; position: relative;}
+.list.filter div button::after{content: ''; display: block; width: 16px; height: 16px; background-image: url('../images/woori_icon_arrow_select.svg'); position: absolute; right: 24px; top: 16px; transition: transform ease-out .4s;}
+.list.filter div button.active::after{transform: rotate(180deg);}
+.list.filter div button:not(.active)+ul{display: none;}
+.list.filter div button.active+ul{display: block;}
+
+.list.filter ul{position: absolute; width: 100%; transform: translate(0, 8px); padding: 6px 24px; background-color: #FFF; border: 2px solid #007CC0; border-radius: 10px; box-sizing: border-box; height: 200px; overflow-y: scroll; box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);}
+.list.filter ul::-webkit-scrollbar {display: none;}
+.list.filter ul li{display: block; font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; padding-block: 12px; cursor: pointer;}
+.list.filter ul li:not(:last-of-type){border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+.list.filter ul li.active{text-decoration: underline; font-weight: 600; color: #007CC0;}
