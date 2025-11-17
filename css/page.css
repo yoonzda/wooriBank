@@ -80,6 +80,7 @@
 .listContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 .detailContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 .applyContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
+.notiContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 
 .tabList{background-color: #FFF; display: flex; justify-content: center; width: 438px; height: 46px; margin: 0 auto; border-radius: 50px; margin-bottom: 28px;}
 .tabList li{display: block; flex: 1; text-align: center; border-radius: 50px;}
@@ -181,6 +182,7 @@ table.verti tbody tr td{text-align: center;}
 [class*="Container"] h3.payer{background-image: url('../images/woori_icon_payer.svg');}
 [class*="Container"] h3.proposer{background-image: url('../images/woori_icon_proposer.svg');}
 [class*="Container"] h3.user{background-image: url('../images/woori_icon_user.svg');}
+[class*="Container"] h3.notice{background-image: url('../images/woori_icon_noti.svg');}
 
 .detailContainer table th{min-width: 120px; box-sizing: border-box;}
 .detailContainer table input[type="radio"]{display: none;}
@@ -234,3 +236,13 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer td.innerSelect div button{vertical-align: top;}
 
 .applyContainer td.innerGutter div{min-height: 150px; border: 1px solid #007CC0; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); padding: 16px; line-height: 140%;}
+
+.notiContainer .box div table tbody td.chip{display: inline-block; font-size: 12px; font-weight: 700;}
+
+.notiContainer td:not(.alignLeft){text-align: center;}
+.notiContainer td{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

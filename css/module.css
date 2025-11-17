@@ -15,6 +15,7 @@ header ol li:nth-of-type(4) .btn.gray{background-image: url('../images/woori_ico
 .chip.blue:not(.active){color: #222;}
 .chip.blue.active{background-color: #4C6ADF; color: #FFF;}
 .chip.purple{background-color: #673AB6; color: #FFF;}
+.chip.gray{background-color: #666666; color: #FFF; font-size: 13px; font-weight: 700;}
 
 button.state{line-height: normal; cursor: pointer;}
 .state{display: inline-block; font-size: 13px; font-weight: 600; width: 64px; height: 26px; line-height: 26px; border-radius: 4px; border: 1px solid var(--border-color); background-color: var(--background-color); color: var(--text-color);}
