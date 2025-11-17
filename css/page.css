@@ -79,7 +79,7 @@
 .history.box div table{width: 100%; text-align: center;}
 .history.box div table thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
 .history.box div table thead th{font-size: 14px; line-height: 140%; color: #222; padding-block: 12px;}
-.history.box div table thead th:not(accWeight){font-weight: 600;}
+.history.box div table thead th:not(.accWeight){font-weight: 600;}
 .history.box div table thead th.accWeight{font-weight: 700;}
 .history.box div table tbody td:not(.chip){font-size: 14px; font-weight: 400; padding-block: 10px; color: #222;}
 .history.box div table tbody td.chip{display: inline-block; font-size: 12px; font-weight: 700;}
@@ -154,7 +154,7 @@ table{width: 100%;}
 .qnaContainer table td:not(:first-of-type),
 .listContainer table th:not(:first-of-type),
 .listContainer table td:not(:first-of-type){border-left: 1px solid #E5E7EB;}
-/* .detailContainer table th:not(:first-of-type), */
+
 .detailContainer table td:first-of-type{border-left: 1px solid #E5E7EB;}
 
 .downContainer table th,
@@ -168,12 +168,8 @@ table{width: 100%;}
 .detailContainer table tr:not(:first-of-type) th{border-top: 1px solid #E5E7EB;}
 .applyContainer table tr:not(:first-of-type){border-top: 1px solid #E5E7EB;}
 
-/* .detailContainer table th, */
-/* .detailContainer table td, */
-/* .applyContainer table.hori th, */
 .applyContainer table.hori>tbody>tr>td{border-left: 1px solid #E5E7EB;}
 
-/* table.verti{border-radius: 12px; border: 1px solid #E5E7EB;} */
 table.verti thead tr{background-color: rgba(243, 244, 246, 0.5); border-bottom: 1px solid #E5E7EB;}
 table.verti tbody tr:not(:last-of-type){border-bottom: 1px solid #E5E7EB;}
 table.verti tbody tr td{text-align: center;}
