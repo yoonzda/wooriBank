@@ -83,6 +83,7 @@
 .notiContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 .qnaContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 .faqContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
+.downContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 
 .tabList{background-color: #FFF; display: flex; justify-content: center; width: 438px; height: 46px; margin: 0 auto; border-radius: 50px; margin-bottom: 28px;}
 .tabList li{display: block; flex: 1; text-align: center; border-radius: 50px;}
@@ -119,27 +120,35 @@ table{width: 100%;}
 .detailWrap .payerInfo.box{max-width: 380px;}
 .detailWrap .proposerInfo.box{flex: 1;}
 
+.downContainer tr,
 .qnaContainer tr,
 .listContainer tr,
 .detailContainer tr,
 .applyContainer tr{height: 50px; line-height: 50px;}
 
+.downContainer th,
 .qnaContainer th,
 .listContainer th,
 .detailContainer th,
 .applyContainer th{font-size: 15px; font-weight: 500; color: #222; background-color: rgba(243, 244, 246, 0.5); padding-inline: 24px;}
 
+.downContainer td,
 .qnaContainer td,
 .listContainer td,
 .detailContainer td:not(.removeGutter),
 .applyContainer td{font-size: 15px; font-weight: 400; color: #434343; padding-inline: 24px;}
 
+.downContainer table th:not(:first-of-type),
+.downContainer table td:not(:first-of-type),
 .qnaContainer table th:not(:first-of-type),
 .qnaContainer table td:not(:first-of-type),
 .listContainer table th:not(:first-of-type),
 .listContainer table td:not(:first-of-type){border-left: 1px solid #E5E7EB;}
 /* .detailContainer table th:not(:first-of-type), */
 .detailContainer table td:first-of-type{border-left: 1px solid #E5E7EB;}
+
+.downContainer table th,
+.downContainer table tbody tr:not(:last-of-type) td,
 .qnaContainer table th,
 .qnaContainer table tbody tr:not(:last-of-type) td,
 .listContainer table th,
@@ -317,3 +326,14 @@ div.blueBox{border: 1px solid #007CC0; border-radius: 12px; box-shadow: 2px 2px 
 .faqContainer .accordion .bul.question::before{content: 'Q.';}
 .faqContainer .accordion .bul.answer::before{content: 'A.';}
 .faqContainer .accordion li div{padding-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.1); margin-top: 20px;}
+
+.downContainer .textBox{text-align: center; margin-bottom: 20px; padding-top: 10px;}
+.downContainer .textBox h2{font-size: 32px; font-weight: 700; line-height: 140%; color: #222; margin-bottom: 12px;}
+.downContainer .textBox>p{font-size: 16px; font-weight: 400; line-height: 140%; color: #434343;}
+.blueMark{background-color: #EBF3FE; border: 1px dashed #CDE0FF; border-radius: 50px; padding-block: 13px; margin-top: 20px;}
+.blueMark p{display: inline-block; font-size: 16px; font-weight: 600; line-height: 140%; background-image: url('../images/woori_icon_mark.svg'); background-position: left center; background-repeat: no-repeat; color: #3C83F6; padding-left: 34px;}
+
+.downContainer table tr{cursor: default;}
+.downContainer .textGreen{color: #1BB553;}
+.downContainer .textRed{color: #C72020;}
+.downContainer span.downFile{color: transparent; background-image: url('../images/woori_icon_file.svg'); background-position: center; background-repeat: no-repeat; cursor: pointer;}
