@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <div class="layer">
+    <div class="layer active apply">
         <div class="layerWrap">
             <h3 class="bul user">사용자 선택</h3>
             <div class="searchBox">
                 <form>
-                    <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
+                    <input type="search" name="" id="" placeholder="부서 / 이름 / 아이디를 입력해 주세요.">
                     <button type="submit">검색</button>
                 </form>
             </div>
-            <input type="search" name="" id="" placeholder="부서 / 이름 / 아이디를 입력해 주세요."/>
-            <div>
-                <table>
+            <div class="tableWrap">
+                <table class="verti">
                     <colgroup>
                         <col width="19%">
                         <col width="27%">
@@ -105,9 +104,9 @@
                     </tbody>
                 </table>
             </div>
-            <div>
-                <button type="button">닫기</button>
-                <button type="button">확인</button>
+            <div class="buttonBox full">
+                <button type="button" class="btnCancle">닫기</button>
+                <button type="button" class="btnSubmit">확인</button>
             </div>
         </div>
     </div>
