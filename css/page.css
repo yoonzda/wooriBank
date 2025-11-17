@@ -81,6 +81,7 @@
 .detailContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 .applyContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 .notiContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
+.qnaContainer{max-width: 1350px; margin: 0 auto; padding-top: 240px; padding-inline: 4%;}
 
 .tabList{background-color: #FFF; display: flex; justify-content: center; width: 438px; height: 46px; margin: 0 auto; border-radius: 50px; margin-bottom: 28px;}
 .tabList li{display: block; flex: 1; text-align: center; border-radius: 50px;}
@@ -117,22 +118,29 @@ table{width: 100%;}
 .detailWrap .payerInfo.box{max-width: 380px;}
 .detailWrap .proposerInfo.box{flex: 1;}
 
+.qnaContainer tr,
 .listContainer tr,
 .detailContainer tr,
 .applyContainer tr{height: 50px; line-height: 50px;}
 
+.qnaContainer th,
 .listContainer th,
 .detailContainer th,
 .applyContainer th{font-size: 15px; font-weight: 500; color: #222; background-color: rgba(243, 244, 246, 0.5); padding-inline: 24px;}
 
+.qnaContainer td,
 .listContainer td,
 .detailContainer td:not(.removeGutter),
 .applyContainer td{font-size: 15px; font-weight: 400; color: #434343; padding-inline: 24px;}
 
+.qnaContainer table th:not(:first-of-type),
+.qnaContainer table td:not(:first-of-type),
 .listContainer table th:not(:first-of-type),
 .listContainer table td:not(:first-of-type){border-left: 1px solid #E5E7EB;}
 /* .detailContainer table th:not(:first-of-type), */
 .detailContainer table td:first-of-type{border-left: 1px solid #E5E7EB;}
+.qnaContainer table th,
+.qnaContainer table tbody tr:not(:last-of-type) td,
 .listContainer table th,
 .listContainer table tbody tr:not(:last-of-type) td,
 .detailContainer table tr:not(:last-of-type) td{border-bottom: 1px solid #E5E7EB;}
@@ -160,6 +168,7 @@ table.verti tbody tr td{text-align: center;}
 
 .listContainer .selectWrap{width: 120px;}
 .applyContainer .selectWrap{width: 160px;}
+.qnaContainer .selectWrap{width: 120px;}
 
 .selectWrap{position: relative; height: 40px;}
 .selectWrap button{height: 40px; font-size: 14px; font-weight: 400; color: #222; padding: 0 12px; background-color: #FFF; border-radius: 10px; box-sizing: border-box; width: 100%; text-align: left; cursor: pointer; position: relative;}
@@ -176,13 +185,18 @@ table.verti tbody tr td{text-align: center;}
 .selectWrap ul li:not(:last-of-type){border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
 .selectWrap ul li.active{text-decoration: underline; font-weight: 600; color: #007CC0;}
 
-[class*="Container"] h3{font-size: 18px; font-weight: 600; line-height: 140%; color: #222; margin-bottom: 16px;}
+.detailContainer h3{margin-bottom: 16px;}
+.applyContainer h3{margin-bottom: 16px;}
+.notiContainer h3:has(span){margin-bottom: 20px;}
+
+[class*="Container"] h3{font-size: 18px; font-weight: 600; line-height: 140%; color: #222;}
 [class*="Container"] h3.bul{padding-left: 28px; background-repeat: no-repeat; background-position: left center;}
 [class*="Container"] h3.clock{background-image: url('../images/woori_icon_logHistory.svg');}
 [class*="Container"] h3.payer{background-image: url('../images/woori_icon_payer.svg');}
 [class*="Container"] h3.proposer{background-image: url('../images/woori_icon_proposer.svg');}
 [class*="Container"] h3.user{background-image: url('../images/woori_icon_user.svg');}
 [class*="Container"] h3.notice{background-image: url('../images/woori_icon_noti.svg');}
+[class*="Container"] h3.qna{background-image: url('../images/woori_icon_qna.svg');}
 
 .detailContainer table th{min-width: 120px; box-sizing: border-box;}
 .detailContainer table input[type="radio"]{display: none;}
@@ -190,8 +204,8 @@ table.verti tbody tr td{text-align: center;}
 .detailContainer table label{display: block; text-align: center; padding-inline: 24px; border: 1px solid transparent; border-radius: 10px; font-size: 15px; font-weight: 400; color: #434343;}
 
 .buttonBox button{border-radius: 8px; font-size: 16px; font-weight: 600; min-width: 130px; height: 46px; padding: 0; cursor: pointer;}
-.buttonBox button:first-of-type{border: 1px solid #DDD; background-color: #FFF; color: #222;}
-.buttonBox button:last-of-type{border: 1px solid transparent; background-color: #121212; color: #FFF;}
+.buttonBox button.btnCancle{border: 1px solid #DDD; background-color: #FFF; color: #222;}
+.buttonBox button.btnSubmit{border: 1px solid transparent; background-color: #121212; color: #FFF;}
 .buttonBox.right{margin-top: 12px; display: flex; justify-content: flex-end; gap: 6px;}
 
 .detailContainer .payerInfo{display: flex; flex-direction: column;}
@@ -211,6 +225,7 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer table.verti label{background-image: url('../images/woori_radio_off.svg'); background-repeat: no-repeat; background-position: center; width: 16px; height: 16px; display: inline-block; text-indent: -9999px; vertical-align: middle; cursor: pointer;}
 .applyContainer table.hori>tbody>tr>th{min-width: 160px; box-sizing: border-box;}
 
+.applyContainer .info.box ol li{display: block;}
 .applyContainer .info.box ul li{display: block;}
 .applyContainer .info.box ul:not(.selectList)>li:not(:last-of-type){margin-bottom: 40px;}
 .applyContainer .info.box table.innerGutter>tbody>tr>td{padding-block: 24px;}
@@ -257,11 +272,20 @@ table.verti tbody tr td{text-align: center;}
 
 .notiContainer h3 span{font-size: 14px; font-weight: 500; color: #666; vertical-align: middle; margin-left: 4px;}
 .notiContainer .detailBox{border-top: 1px solid #666; padding-top: 32px;}
-.notiContainer .detailBox h4{font-size: 24px; font-weight: 600; line-height: 140%; color: #222; margin-bottom: 12px;}
-.notiContainer .detailBox h4+div{font-size: 16px; font-weight: 500; line-height: 140%; color: #666; margin-bottom: 32px;}
-.notiContainer .detailBox h4+div span{font-weight: 400; color: #999; margin-left: 8px;}
-.notiContainer .detailBox p{font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; margin-bottom: 60px;}
+.detailBox h4{font-size: 24px; font-weight: 600; line-height: 140%; color: #222; margin-bottom: 12px;}
+.applyContainer .detailBox h4{margin-bottom: 32px;}
+.detailBox h4+div{font-size: 16px; font-weight: 500; line-height: 140%; color: #666; margin-bottom: 32px;}
+.detailBox h4+div span{font-weight: 400; color: #999; margin-left: 8px;}
+.detailBox p{font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; margin-bottom: 60px;}
 .notiContainer .detailBox p+div{border: 1px dashed #E5E7EB; border-radius: 10px; background-color: rgba(243, 244, 246, 0.5); padding: 20px 24px;}
 .notiContainer .detailBox p+div ul li{display: block; padding-left: 28px; background-image: url('../images/woori_icon_file.svg'); background-position: left center; background-repeat: no-repeat;}
 .notiContainer .detailBox p+div ul li:not(:last-of-type){margin-bottom: 12px;}
 .notiContainer .detailBox p+div ul li a{text-decoration: none; display: block; font-size: 14px; font-weight: 400; line-height: 140%; color: #434343;}
+
+.notiContainer .list.filter{align-items: center;}
+.qnaContainer .list.filter{align-items: center;}
+.qnaContainer .searchBox{display: flex; align-items: center; gap: 12px;}
+.qnaContainer h3{line-height: 36px;}
+.qnaContainer h3 button{font-size: 14px; font-weight: 600; line-height: 140%; color: #3C83F6; background-color: #FFF; border: 1px solid #3C83F6; box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.06); border-radius: 20px; line-height: 36px; padding: 0 16px 0 36px; background-image: url('../images/woori_icon_write.svg'); background-repeat: no-repeat; background-position: 16px center; box-sizing: border-box; margin-left: 20px; cursor: pointer;}
+
+.qnaTable{margin-bottom: 32px;}

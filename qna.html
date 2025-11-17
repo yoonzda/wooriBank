@@ -43,8 +43,83 @@
             </div>
         </div>
     </header>
-    <div class="contentContainer">
-        
+    <div class="qnaContainer">
+        <div class="box">
+            <div class="list filter">
+                <h3 class="bul qna">Q&A <button type="button" onClick="location.href='qna_write.html'">문의하기</button></h3>
+                <div class="searchBox">
+                    <div class="selectWrap">
+                        <button type="button" class="selectCustom" id="filter3">전체</button>
+                        <ul class="selectList" data-select="filter3">
+                            <li class="active">전체</li>
+                            <li>신청항목</li>
+                            <li>신청사유</li>
+                            <li>신청일자</li>
+                            <li>상태</li>
+                        </ul>
+                    </div>
+                    <form>
+                        <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
+                        <button type="submit">검색</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="tableWrap">
+                    <table class="listTable" valign=middle>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="50%">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>신청항목</th>
+                                <th>신청사유</th>
+                                <th>신청일자</th>
+                                <th>상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onClick="location.href='qna_view.html'">
+                                <td>문의</td>
+                                <td class="alignLeft">문의 FAQ 제목이 들어갈 공간입니다. 문의 FAQ 제목이 들어갈 공간입니다. 문의 FAQ 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05  11:19</td>
+                                <td><span class="state pink">미답변</span></td>
+                            </tr>
+                            <tr onClick="location.href='qna_view.html'">
+                                <td>장애</td>
+                                <td class="alignLeft">장애 FAQ 제목이 들어갈 공간입니다. 장애 FAQ 제목이 들어갈 공간입니다. 장애 FAQ 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05  11:19</td>
+                                <td><span class="state pink">미답변</span></td>
+                            </tr>
+                            <tr onClick="location.href='qna_view.html'">
+                                <td>기타</td>
+                                <td class="alignLeft">기타 FAQ 제목이 들어갈 공간입니다. 기타 FAQ 제목이 들어갈 공간입니다. 기타 FAQ 제목이 들어갈 공간입니다.</td>
+                                <td>20205.09.05  11:19</td>
+                                <td><span class="state indigo">답변완료</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tablePager">
+                    <div class="leftBtnBox">
+                        <a href="javascript:void(0)">first</a>
+                        <a href="javascript:void(0)">prev</a>
+                    </div>
+                    <div class="rightBtnBox">
+                        <a href="javascript:void(0)">next</a>
+                        <a href="javascript:void(0)">last</a>
+                    </div>
+                    <ol>
+                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <ul>
