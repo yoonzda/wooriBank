@@ -210,7 +210,7 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer table.hori>tbody>tr>th{min-width: 160px; box-sizing: border-box;}
 
 .applyContainer .info.box ul li{display: block;}
-.applyContainer .info.box ul>li:not(:last-of-type){margin-bottom: 40px;}
+.applyContainer .info.box ul:not(.selectList)>li:not(:last-of-type){margin-bottom: 40px;}
 .applyContainer .info.box table.innerGutter>tbody>tr>td{padding-block: 24px;}
 .innerGutter{padding-block: 24px;}
 .applyContainer .info.box td div.tableWrap{height: 200px; overflow: auto;}
@@ -224,6 +224,13 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer .info.box td ol li label{padding-left: 24px; background-image: url('../images/woori_radio_off.svg'); background-position: left center; background-repeat: no-repeat; cursor: pointer;}
 
 .applyContainer tr:has(textarea) th{vertical-align: middle;}
-.applyContainer textarea{width: 100%; min-height: 150px; border-radius: 12px; border: 1px solid #EBEBEB; padding: 16px; font-size: 15px; font-weight: 400; color: #434343; box-sizing: border-box;}
+.applyContainer textarea{display: block; width: 100%; min-height: 150px; border-radius: 12px; border: 1px solid #EBEBEB; padding: 16px; font-size: 15px; font-weight: 400; color: #434343; box-sizing: border-box;}
 .applyContainer textarea::placeholder{color: #999;}
 .applyContainer textarea:focus{outline: none;}
+
+.applyContainer tr.heightFill th{vertical-align: middle;}
+
+.applyContainer td.innerSelect{vertical-align: middle; padding-block: 15px;}
+.applyContainer td.innerSelect div button{vertical-align: top;}
+
+.applyContainer td.innerGutter div{min-height: 150px; border: 1px solid #007CC0; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); padding: 16px; line-height: 140%;}

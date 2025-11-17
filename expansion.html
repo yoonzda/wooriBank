@@ -145,108 +145,92 @@
             <li><a href="apply.html">VDI 사용신청</a></li>
             <li class="active"><a href="expansion.html">VDI 리소스 증설</a></li>
         </ul>
-        <div class="box">
-            <table class="verti">
-                <colgroup>
-                    <col width="6%">
-                    <col width="25%">
-                    <col width="25%">
-                    <col width="44%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>선택</th>
-                        <th>가상 PC 유형</th>
-                        <th>OS 종류</th>
-                        <th>설명</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="radio" name="selectType" id="selectType1">
-                            <label for="selectType1"></label>
-                        </td>
-                        <td>CL8-전용-W10</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="select box">
+            <div class="tableWrap">
+                <table class="verti">
+                    <colgroup>
+                        <col width="6%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="44%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>선택</th>
+                            <th>가상 PC 유형</th>
+                            <th>OS 종류</th>
+                            <th>설명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="selectType" id="selectType1">
+                                <label for="selectType1"></label>
+                            </td>
+                            <td>CL8-전용-W10</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="box">
+        <div class="info box">
             <ul>
                 <li>
-                    <h3 class="bul">신청 정보</h3>
-                    <table class="hori">
-                        <colgroup>
-                            <col width="8%">
-                            <col width="92%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>가상 PC 정보</th>
-                                <td>
-                                    <ol>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year1"/>
-                                            <label for="year1">1년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year2"/>
-                                            <label for="year2">2년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year3"/>
-                                            <label for="year3">3년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year4"/>
-                                            <label for="year4">4년</label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="selectYear" id="year5"/>
-                                            <label for="year5">5년</label>
-                                        </li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>CPU(Core)</th>
-                                <td>
-                                    <div class="selectWrap">
-                                        <button type="button" class="selectCustom" id="filter4">선택해 주세요.</button>
-                                        <ul class="selectList" data-select="filter4">
-                                            <li>CPU(Core) 01</li>
-                                            <li>CPU(Core) 02</li>
-                                            <li>CPU(Core) 03</li>
-                                            <li>CPU(Core) 04</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>메모리(GB)</th>
-                                <td>
-                                    <div class="selectWrap">
-                                        <button type="button" class="selectCustom" id="filter5">선택해 주세요.</button>
-                                        <ul class="selectList" data-select="filter5">
-                                            <li>memory(GB) 01</li>
-                                            <li>memory(GB) 02</li>
-                                            <li>memory(GB) 03</li>
-                                            <li>memory(GB) 04</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>신청 사유</th>
-                                <td>
-                                    <textarea name="" id="" placeholder="신청 사유를 입력해 주세요."></textarea>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3 class="bul proposer">신청 정보</h3>
+                    <div class="tableWrap">
+                        <table class="hori">
+                            <colgroup>
+                                <col width="8%">
+                                <col width="92%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>가상 PC 정보</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>CPU(Core)</th>
+                                    <td class="innerSelect">
+                                        <div class="selectWrap">
+                                            <button type="button" class="selectCustom" id="filter4">선택해 주세요.</button>
+                                            <ul class="selectList" data-select="filter4">
+                                                <li>CPU(Core) 01</li>
+                                                <li>CPU(Core) 02</li>
+                                                <li>CPU(Core) 03</li>
+                                                <li>CPU(Core) 04</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>메모리(GB)</th>
+                                    <td class="innerSelect">
+                                        <div class="selectWrap">
+                                            <button type="button" class="selectCustom" id="filter5">선택해 주세요.</button>
+                                            <ul class="selectList" data-select="filter5">
+                                                <li>memory(GB) 01</li>
+                                                <li>memory(GB) 02</li>
+                                                <li>memory(GB) 03</li>
+                                                <li>memory(GB) 04</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>신청 사유</th>
+                                    <td class="innerGutter">
+                                        <!-- <textarea name="" id="" placeholder="신청 사유를 입력해 주세요."></textarea> -->
+                                        <div>
+                                            <p>신청 사유 내용이 들어갈 공간입니다. 신청 사유 내용이 들어갈 공간입니다. 신청 사유 내용이 들어갈 공간입니다. 신청 사유 내용이 들어갈 공간입니다.신청 사유 내용이 들어갈 공간입니다.</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </li>
             </ul>
             <div class="buttonBox right">
