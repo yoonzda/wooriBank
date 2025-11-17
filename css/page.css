@@ -246,3 +246,22 @@ table.verti tbody tr td{text-align: center;}
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.notiContainer td.alignLeft{padding-inline: 24px;}
+.notiContainer table tbody{border-top: 1px solid #666;}
+.notiContainer table tr{height: 70px; cursor: pointer;}
+.notiContainer table tr{border-bottom: 1px solid #E5E7EB;}
+.notiContainer table tr *{vertical-align: middle;}
+.notiContainer table tr td span{padding: 7px 14px; border-radius: 20px; background-color: #666666; color: #FFF; font-size: 13px; font-weight: 700;}
+.notiContainer .buttonBox a.movePrev{display: block; width: 112px; padding-inline: 40px 20px; box-sizing: border-box; line-height: 44px; background-color: #FFF; border: 1px solid #DDD; text-align: center; text-decoration: none; font-size: 15px; font-weight: 700; color: #434343; border-radius: 8px; background-image: url('../images/woori_icon_prev.svg'); background-repeat: no-repeat; background-position: 32px center;}
+.notiContainer .buttonBox a.moveHome{display: block; width: 112px; padding-inline: 40px 20px; box-sizing: border-box; line-height: 44px; background-color: #007CC0; text-align: center; text-decoration: none; font-size: 15px; font-weight: 700; color: #FFF; border-radius: 8px; background-image: url('../images/woori_icon_home.svg'); background-repeat: no-repeat; background-position: 20px center;}
+
+.notiContainer h3 span{font-size: 14px; font-weight: 500; color: #666; vertical-align: middle; margin-left: 4px;}
+.notiContainer .detailBox{border-top: 1px solid #666; padding-top: 32px;}
+.notiContainer .detailBox h4{font-size: 24px; font-weight: 600; line-height: 140%; color: #222; margin-bottom: 12px;}
+.notiContainer .detailBox h4+div{font-size: 16px; font-weight: 500; line-height: 140%; color: #666; margin-bottom: 32px;}
+.notiContainer .detailBox h4+div span{font-weight: 400; color: #999; margin-left: 8px;}
+.notiContainer .detailBox p{font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; margin-bottom: 60px;}
+.notiContainer .detailBox p+div{border: 1px dashed #E5E7EB; border-radius: 10px; background-color: rgba(243, 244, 246, 0.5); padding: 20px 24px;}
+.notiContainer .detailBox p+div ul li{display: block; padding-left: 28px; background-image: url('../images/woori_icon_file.svg'); background-position: left center; background-repeat: no-repeat;}
+.notiContainer .detailBox p+div ul li:not(:last-of-type){margin-bottom: 12px;}
+.notiContainer .detailBox p+div ul li a{text-decoration: none; display: block; font-size: 14px; font-weight: 400; line-height: 140%; color: #434343;}
