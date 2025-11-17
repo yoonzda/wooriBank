@@ -2,6 +2,7 @@
 a{color: inherit;}
 table textarea{resize: none;}
 input[type="search"]:focus{outline: none;}
+input[type="text"]:focus{outline: none;}
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-results-button {display: none;}
 

@@ -241,6 +241,7 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer .info.box td ol li label{padding-left: 24px; background-image: url('../images/woori_radio_off.svg'); background-position: left center; background-repeat: no-repeat; cursor: pointer;}
 
 .applyContainer tr:has(textarea) th{vertical-align: middle;}
+.applyContainer tr:has(input[type="text"]) th{vertical-align: middle;}
 .applyContainer textarea{display: block; width: 100%; min-height: 150px; border-radius: 12px; border: 1px solid #EBEBEB; padding: 16px; font-size: 15px; font-weight: 400; color: #434343; box-sizing: border-box;}
 .applyContainer textarea::placeholder{color: #999;}
 .applyContainer textarea:focus{outline: none;}
@@ -250,7 +251,8 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer td.innerSelect{vertical-align: middle; padding-block: 15px;}
 .applyContainer td.innerSelect div button{vertical-align: top;}
 
-.applyContainer td.innerGutter div{min-height: 150px; border: 1px solid #007CC0; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); padding: 16px; line-height: 140%;}
+.applyContainer td.innerGutter div.blueBox{min-height: 150px; border: 1px solid #007CC0; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); padding: 16px; line-height: 140%;}
+div.blueBox{border: 1px solid #007CC0; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); padding: 30px; line-height: 140%;}
 
 .notiContainer .box div table tbody td.chip{display: inline-block; font-size: 12px; font-weight: 700;}
 
@@ -276,8 +278,8 @@ table.verti tbody tr td{text-align: center;}
 .applyContainer .detailBox h4{margin-bottom: 32px;}
 .detailBox h4+div{font-size: 16px; font-weight: 500; line-height: 140%; color: #666; margin-bottom: 32px;}
 .detailBox h4+div span{font-weight: 400; color: #999; margin-left: 8px;}
-.detailBox p{font-size: 16px; font-weight: 400; line-height: 140%; color: #434343; margin-bottom: 60px;}
-.notiContainer .detailBox p+div{border: 1px dashed #E5E7EB; border-radius: 10px; background-color: rgba(243, 244, 246, 0.5); padding: 20px 24px;}
+.detailBox p{font-size: 16px; font-weight: 400; line-height: 140%; color: #434343;}
+.notiContainer .detailBox p+div{border: 1px dashed #E5E7EB; border-radius: 10px; background-color: rgba(243, 244, 246, 0.5); padding: 20px 24px; margin-top: 60px;}
 .notiContainer .detailBox p+div ul li{display: block; padding-left: 28px; background-image: url('../images/woori_icon_file.svg'); background-position: left center; background-repeat: no-repeat;}
 .notiContainer .detailBox p+div ul li:not(:last-of-type){margin-bottom: 12px;}
 .notiContainer .detailBox p+div ul li a{text-decoration: none; display: block; font-size: 14px; font-weight: 400; line-height: 140%; color: #434343;}
@@ -289,3 +291,13 @@ table.verti tbody tr td{text-align: center;}
 .qnaContainer h3 button{font-size: 14px; font-weight: 600; line-height: 140%; color: #3C83F6; background-color: #FFF; border: 1px solid #3C83F6; box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.06); border-radius: 20px; line-height: 36px; padding: 0 16px 0 36px; background-image: url('../images/woori_icon_write.svg'); background-repeat: no-repeat; background-position: 16px center; box-sizing: border-box; margin-left: 20px; cursor: pointer;}
 
 .qnaTable{margin-bottom: 32px;}
+.qnaTable+ul li input[type="text"]{font-size: 14px; font-weight: 400; line-height: 140%; color: #434343; padding: 15px 12px; border: 1px solid #EBEBEB; width: 100%; box-sizing: border-box; border-radius: 6px;}
+.qnaTable+ul li input[type="text"]::placeholder{color: #999;}
+.qnaTable+ul li td:has(input[type="text"]){display: flex; align-items: center; gap: 8px;}
+.qnaTable+ul li td:has(input[type="text"]) span{display: block;}
+.qnaTable+ul li td:has(input[type="text"]) span img{width: 100%; display: block;}
+.qnaTable+ul li td:has(input[type="text"]) input{flex: 1;}
+.qnaTable+ul li td:has(input[type="text"]) button{width: 50px; height: 50px; border-radius: 6px; background-color: #FFF; border: 1px solid #EBEBEB; text-indent: -9999px; background-image: url('../images/woori_icon_reset.svg'); background-position: center; background-repeat: no-repeat; cursor: pointer;}
+
+.rippleBox{margin-top: 60px;}
+.rippleBox h5{font-size: 20px; font-weight: 600; line-height: 140%; color: #222; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 16px;}
