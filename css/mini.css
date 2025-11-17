@@ -1,8 +1,10 @@
+.changePw-wrap{width: 700px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.changePw-wrap .changePw-box{padding: 40px 30px 30px; box-sizing: border-box; background: #fff; border-radius: 10px;}
+
 .changePw-wrap .titleBox{margin-bottom: 32px;}
 .changePw-wrap .titleBox div img {max-width: 48px; width: 100%;}
-.changePw-wrap .titleBox div strong{color: #222; font-size: 32px; font-weight: 700; line-height: 1.4; letter-spacing: -0.96px; display: block; margin-bottom: 4px;}
-.changePw-wrap .titleBox div span{display: block; font-weight: 400; font-size: 16px; line-height: 1.4; color: #434343; letter-spacing: -0.48px;}
-
+.changePw-wrap .titleBox strong{color: #222; font-size: 32px; font-weight: 700; line-height: 1.4; letter-spacing: -0.96px; display: block; margin-bottom: 4px;}
+.changePw-wrap .titleBox span{display: block; font-weight: 400; font-size: 16px; line-height: 1.4; color: #434343; letter-spacing: -0.48px;}
 
 .changePw-wrap .accountTab{margin-bottom: 32px;}
 .changePw-wrap .accountTab ul li{ background-color: #F5F5F5; border: 1px solid #ddd;color: #999;  font-size: 16px; letter-spacing: -0.48px; font-weight: 600; line-height: 60px; height: 60px;}
